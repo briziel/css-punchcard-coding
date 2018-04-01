@@ -1,0 +1,505 @@
+*
+    box-sizing border-box
+
+body
+    margin 0
+    padding 0
+    font-family helvetica neue, helvetica, arial, sans-serif
+    line-height 1.5
+    background-color #eee
+    color #333
+    counter-reset amount
+
+input
+    position absolute
+    visibility hidden
+
+label
+    user-select none
+
+.wrapper
+    max-width 800px
+    width 100%
+    border-collapse collapse
+    margin 0 auto
+    background-color #fff
+    padding 20px 10px 40px
+
+&--dark
+    background-color #333
+    color #fff
+
+.header
+    width 100%
+    margin-bottom 20px
+    .logo
+        h1
+        margin 0
+        padding 0
+    .icons
+        width 33%
+
+.minicart
+    .amount::before
+        color #666
+        display inline
+        content "(0) "
+    .price::before
+        color #666
+        display inline
+        content: "0€"
+
+#detail1basket:checked ~ .header .minicart
+#detail2basket:checked ~ .header .minicart
+    .amount::before
+        content "(" counter(amountT) ") "
+    .price::before
+        content: counter(priceT) "€"
+
+#detail1basket:checked ~ #cart:not(:checked) ~ .header .minicart
+#detail2basket:checked ~ #cart:not(:checked) ~ .header .minicart
+    background-color #91d759
+    border-color #91d759
+
+
+.list__tile
+    width 33%
+    text-align center
+
+.detail
+    &__image
+        width 67%
+
+    &__orderform
+        width 33%
+        text-align center
+    &__amount
+        margin: 2em 0
+
+.mainimage
+    display none
+
+.thumb
+    position relative
+    width 25%
+
+    label
+        display block
+        border-bottom 4px solid #fff
+
+#imagedetail11:checked ~ table
+    .image11
+        display block
+    #labeldetailimage11
+        border-bottom-color #333
+
+#imagedetail12:checked ~ table
+    .image12
+        display block
+    #labeldetailimage12
+        border-bottom-color #333
+
+#imagedetail13:checked ~ table
+    .image13
+        display block
+    #labeldetailimage13
+        border-bottom-color #333
+
+
+#imagedetail21:checked ~ table
+    .image21
+        display block
+    #labeldetailimage21
+        border-bottom-color #333
+
+.detailcontent
+     display none
+
+#detail1:checked
+    &~ .detail .detail1.detailcontent
+        display block
+
+    &~ .list
+        display none
+
+#detail2:checked
+    &~ .detail .detail2.detailcontent
+        display block
+
+    &~ .list
+        display none
+
+.detail__addtocart
+    &::before
+        display inline
+        content "in den "
+
+    &::after
+        display inline
+        content " legen"
+
+#detail1basket:checked ~ .detail .detail1 .detail__addtocart
+#detail2basket:checked ~ .detail .detail2 .detail__addtocart
+    background-color white
+
+    &::before
+        display inline
+        content "aus dem "
+
+    &::after
+        display inline
+        content " löschen"
+
+.image
+    width 100%
+
+.series
+    text-transform uppercase
+    font-size 0.7em
+    color darkgrey
+
+.title
+    font-weight bold
+
+.price.detail__price
+    font-size 2em
+
+.button
+    text-align center
+    display block
+    border 1px solid #bbb
+    border-radius 4px
+    padding 5px 20px
+    visibility visible
+    font-size 1em
+    position relative
+
+    &--primary
+        background-color #91d759
+        border none
+        margin 2em 0
+        padding 10px 20px
+
+.number
+    font-weight bold
+    line-height 30px
+
+.counter
+    text-align center
+    position relative
+    background-color #efefef
+    padding 1em 0
+
+.handles
+    position absolute
+    top 1em
+    width 130px
+    left 0
+    right 0
+    margin 0 auto
+
+.cart .handles
+    width 90px
+
+.aH
+    display none
+    position absolute
+    width 30px
+    height 30px
+    background-color darkgrey
+    border-radius 4px
+
+    &::after
+        display block
+        content "+"
+        width 30px
+        line-height 25px
+        text-align center
+        font-size 30px
+        color white
+
+.amount1::before
+    content counter(amount1)
+    display block
+
+.amount2::before
+    content counter(amount2)
+    display block
+
+#s120:checked ~ .detail .detail1 .amount1::before
+    content counter(amount1)
+    display block
+
+#s220:checked ~ .detail .detail2 .amount2::before
+    content counter(amount2)
+    display block
+
+// 1
+for ungerade in 1
+    for zahl in 0 .. 10
+        #s11{zahl}:checked ~ #s12{ungerade}:checked
+            counter-increment amount1 (9 - zahl) + (ungerade * 10) price1 ((9 - zahl) + (ungerade * 10)) * 179
+
+        #s11{zahl}:checked ~ #s12{ungerade}:checked ~ #detail1basket:checked
+            counter-increment amountT (9 - zahl) + (ungerade * 10) priceT ((9 - zahl) + (ungerade * 10)) * 179
+
+        if zahl > 0
+            #s11{zahl}:checked ~ #s12{ungerade}:checked
+                ~ .detail #lS11{zahl - 1}
+                ~ .cart #lS11{zahl - 1}
+                    display block
+                    right 0
+        else
+            #s110:checked ~ #s12{ungerade}:checked
+                ~ .detail #lS12{ungerade + 1}
+                ~ .cart #lS12{ungerade + 1}
+                    display block
+                    right 0
+
+        if zahl == 9
+            #s11{zahl}:checked ~ #s12{ungerade}:checked
+                ~ .detail #lS12{ungerade - 1}
+                ~ .cart #lS12{ungerade - 1}
+                    display block
+                    left 0
+
+                    &:after
+                        content "-"
+
+        #s11{zahl}:checked ~ #s12{ungerade}:checked
+            ~ .detail #lS11{zahl + 1}
+            ~ .cart #lS11{zahl + 1}
+                display block
+                left 0
+
+                &:after
+                    content "-"
+
+for gerade in 0 2
+    for zahl in 0 .. 10
+        #s11{zahl}:checked ~ #s12{gerade}:checked
+            counter-increment amount1 zahl + (gerade * 10) price1 (zahl + (gerade * 10)) * 179
+
+        #s11{zahl}:checked ~ #s12{gerade}:checked  ~ #detail1basket:checked
+            counter-increment amountT zahl + (gerade * 10) priceT (zahl + (gerade * 10)) * 179
+
+        if zahl < 9
+            #s11{zahl}:checked ~ #s12{gerade}:checked
+                ~ .detail #lS11{zahl + 1}
+                ~ .cart #lS11{zahl + 1}
+                    display block
+                    right 0
+        else
+            #s119:checked ~ #s12{gerade}:checked
+                ~ .detail #lS12{gerade + 1}
+                ~ .cart #lS12{gerade + 1}
+                    display block
+                    right 0
+
+        if zahl == 0 && gerade != 0
+            #s11{zahl}:checked ~ #s12{gerade}:checked
+                ~ .detail #lS12{gerade - 1}
+                ~ .cart #lS12{gerade - 1}
+                    display block
+                    left 0
+
+                    &:after
+                        content "-"
+
+        #s11{zahl}:checked ~ #s12{gerade}:checked
+            ~ .detail #lS11{zahl - 1}
+            ~ .cart #lS11{zahl - 1}
+                display block
+                left 0
+
+                &:after
+                    content "-"
+
+// 2
+for ungerade in 1
+    for zahl in 0 .. 10
+        #s21{zahl}:checked ~ #s22{ungerade}:checked
+            counter-increment amount2 (9 - zahl) + (ungerade * 10) price2 ((9 - zahl) + (ungerade * 10)) * 179
+
+        #s21{zahl}:checked ~ #s22{ungerade}:checked ~ #detail2basket:checked
+            counter-increment amountT (9 - zahl) + (ungerade * 10) priceT ((9 - zahl) + (ungerade * 10)) * 179
+
+        if zahl > 0
+            #s21{zahl}:checked ~ #s22{ungerade}:checked
+                ~ .detail #lS11{zahl - 1}
+                ~ .cart #lS11{zahl - 1}
+                    display block
+                    right 0
+        else
+            #s210:checked ~ #s22{ungerade}:checked
+                ~ .detail #lS12{ungerade + 1}
+                ~ .cart #lS12{ungerade + 1}
+                    display block
+                    right 0
+
+        if zahl == 9
+            #s21{zahl}:checked ~ #s22{ungerade}:checked
+                ~ .detail #lS12{ungerade - 1}
+                ~ .cart #lS12{ungerade - 1}
+                    display block
+                    left 0
+
+                    &:after
+                        content "-"
+
+        #s21{zahl}:checked ~ #s22{ungerade}:checked
+            ~ .detail #lS11{zahl + 1}
+            ~ .cart #lS11{zahl + 1}
+                display block
+                left 0
+
+                &:after
+                    content "-"
+
+for gerade in 0 2
+    for zahl in 0 .. 10
+        #s21{zahl}:checked ~ #s22{gerade}:checked
+            counter-increment amount2 zahl + (gerade * 10) price2 (zahl + (gerade * 10)) * 54
+
+        #s21{zahl}:checked ~ #s22{gerade}:checked ~ #detail2basket:checked
+            counter-increment amountT zahl + (gerade * 10) priceT (zahl + (gerade * 10)) * 54
+
+        if zahl < 9
+            #s21{zahl}:checked ~ #s22{gerade}:checked
+                ~ .detail #lS21{zahl + 1}
+                ~ .cart #lS21{zahl + 1}
+                    display block
+                    right 0
+        else
+            #s219:checked ~ #s22{gerade}:checked
+                ~ .detail #lS22{gerade + 1}
+                ~ .cart #lS22{gerade + 1}
+                    display block
+                    right 0
+
+        if zahl == 0 && gerade != 0
+            #s21{zahl}:checked ~ #s22{gerade}:checked
+                ~ .detail #lS22{gerade - 1}
+                ~ .cart #lS22{gerade - 1}
+                    display block
+                    left 0
+
+                    &:after
+                        content "-"
+
+        #s21{zahl}:checked ~ #s22{gerade}:checked
+            ~ .detail #lS21{zahl - 1}
+            ~ .cart #lS21{zahl - 1}
+                display block
+                left 0
+
+                &:after
+                    content "-"
+
+#s110:checked ~ #s120:checked ~ .detail #lS110,
+#s210:checked ~ #s220:checked ~ .detail #lS210,
+#s110:checked ~ #s120:checked ~ .cart #lS110,
+#s210:checked ~ #s220:checked ~ .cart #lS210
+    display block
+    opacity 0.2
+
+    &:after
+        content "-"
+
+#s110:checked ~ #s129:checked ~ .detail #lS129,
+#s210:checked ~ #s229:checked ~ .detail #lS229,
+#s110:checked ~ #s129:checked ~ .cart #lS129,
+#s210:checked ~ #s229:checked ~ .cart #lS229
+    display block
+    right 0
+    opacity 0.2
+
+
+// cart
+
+.cart
+    display none
+    width 100%
+    border-collapse collapse
+
+    &__price
+        text-align right
+
+        &::before
+            display inline
+            content counter(priceT) ",00 €"
+
+    &__shippingCharges
+        text-align right
+
+        &::before
+            display inline
+            content "5,00€"
+
+    &__priceTotal
+        counter-increment priceT 5
+        text-align right
+        min-width 180px
+
+        &::before
+            display inline
+            content counter(priceT) ",00 €"
+
+.total__label
+    text-align right
+    color #a9a9a9
+
+.fat
+    font-size 2em
+
+#cart:checked
+    ~ .cart
+        display table
+    ~ .list
+        display none
+    ~ .detail
+        display none
+
+.lineitem
+    display none
+    border solid #eee
+    border-width 1px 0
+
+    &:first-child
+        border-top: none;
+
+    &:last-child
+        border-bottom: none;
+
+    &__image
+        width 20%
+
+    &__delete
+        display inline-block
+        width 50px
+
+    &__amount
+        width 100px
+
+    td.lineitem__price
+        text-align right
+
+    td
+        text-align center
+
+#detail1basket:checked ~ .cart .lineitem1
+    display table-row
+
+#detail2basket:checked ~ .cart .lineitem2
+    display table-row
+
+#detail1basket:not(:checked) ~ #detail2basket:not(:checked) ~ .cart .lineitemNone
+    display table-row
+
+.ordersubmitwrapper
+    text-align right
+    position relative
+
+    .ordersubmit
+        display inline-block
+        width 33%

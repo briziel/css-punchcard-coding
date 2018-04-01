@@ -1,0 +1,1667 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: helvetica neue, helevtiva, arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input {
+  position: absolute;
+  visibility: hidden;
+}
+.number {
+  font-weight: bold;
+  font-size: 45px;
+}
+.counter {
+  text-align: center;
+}
+.handles {
+  width: 120px;
+  position: relative;
+}
+label {
+  display: none;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #a9a9a9;
+  border-radius: 50%;
+}
+label::after {
+  display: block;
+  content: "+";
+  width: 50px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+}
+.number::before {
+  content: counter(einser);
+  display: block;
+}
+#state20:checked ~ .counter .number::before {
+  content: counter(einser);
+  display: block;
+}
+#state10:checked ~ #state21:checked {
+  counter-increment: einser 19;
+}
+#state10:checked ~ #state21:checked ~ .counter #labelState22 {
+  display: block;
+  right: 0;
+}
+#state10:checked ~ #state21:checked ~ .counter #labelState11 {
+  display: block;
+  left: 0;
+}
+#state10:checked ~ #state21:checked ~ .counter #labelState11:after {
+  content: "-";
+}
+#state11:checked ~ #state21:checked {
+  counter-increment: einser 18;
+}
+#state11:checked ~ #state21:checked ~ .counter #labelState10 {
+  display: block;
+  right: 0;
+}
+#state11:checked ~ #state21:checked ~ .counter #labelState12 {
+  display: block;
+  left: 0;
+}
+#state11:checked ~ #state21:checked ~ .counter #labelState12:after {
+  content: "-";
+}
+#state12:checked ~ #state21:checked {
+  counter-increment: einser 17;
+}
+#state12:checked ~ #state21:checked ~ .counter #labelState11 {
+  display: block;
+  right: 0;
+}
+#state12:checked ~ #state21:checked ~ .counter #labelState13 {
+  display: block;
+  left: 0;
+}
+#state12:checked ~ #state21:checked ~ .counter #labelState13:after {
+  content: "-";
+}
+#state13:checked ~ #state21:checked {
+  counter-increment: einser 16;
+}
+#state13:checked ~ #state21:checked ~ .counter #labelState12 {
+  display: block;
+  right: 0;
+}
+#state13:checked ~ #state21:checked ~ .counter #labelState14 {
+  display: block;
+  left: 0;
+}
+#state13:checked ~ #state21:checked ~ .counter #labelState14:after {
+  content: "-";
+}
+#state14:checked ~ #state21:checked {
+  counter-increment: einser 15;
+}
+#state14:checked ~ #state21:checked ~ .counter #labelState13 {
+  display: block;
+  right: 0;
+}
+#state14:checked ~ #state21:checked ~ .counter #labelState15 {
+  display: block;
+  left: 0;
+}
+#state14:checked ~ #state21:checked ~ .counter #labelState15:after {
+  content: "-";
+}
+#state15:checked ~ #state21:checked {
+  counter-increment: einser 14;
+}
+#state15:checked ~ #state21:checked ~ .counter #labelState14 {
+  display: block;
+  right: 0;
+}
+#state15:checked ~ #state21:checked ~ .counter #labelState16 {
+  display: block;
+  left: 0;
+}
+#state15:checked ~ #state21:checked ~ .counter #labelState16:after {
+  content: "-";
+}
+#state16:checked ~ #state21:checked {
+  counter-increment: einser 13;
+}
+#state16:checked ~ #state21:checked ~ .counter #labelState15 {
+  display: block;
+  right: 0;
+}
+#state16:checked ~ #state21:checked ~ .counter #labelState17 {
+  display: block;
+  left: 0;
+}
+#state16:checked ~ #state21:checked ~ .counter #labelState17:after {
+  content: "-";
+}
+#state17:checked ~ #state21:checked {
+  counter-increment: einser 12;
+}
+#state17:checked ~ #state21:checked ~ .counter #labelState16 {
+  display: block;
+  right: 0;
+}
+#state17:checked ~ #state21:checked ~ .counter #labelState18 {
+  display: block;
+  left: 0;
+}
+#state17:checked ~ #state21:checked ~ .counter #labelState18:after {
+  content: "-";
+}
+#state18:checked ~ #state21:checked {
+  counter-increment: einser 11;
+}
+#state18:checked ~ #state21:checked ~ .counter #labelState17 {
+  display: block;
+  right: 0;
+}
+#state18:checked ~ #state21:checked ~ .counter #labelState19 {
+  display: block;
+  left: 0;
+}
+#state18:checked ~ #state21:checked ~ .counter #labelState19:after {
+  content: "-";
+}
+#state19:checked ~ #state21:checked {
+  counter-increment: einser 10;
+}
+#state19:checked ~ #state21:checked ~ .counter #labelState18 {
+  display: block;
+  right: 0;
+}
+#state19:checked ~ #state21:checked ~ .counter #labelState20 {
+  display: block;
+  left: 0;
+}
+#state19:checked ~ #state21:checked ~ .counter #labelState20:after {
+  content: "-";
+}
+#state19:checked ~ #state21:checked ~ .counter #labelState110 {
+  display: block;
+  left: 0;
+}
+#state19:checked ~ #state21:checked ~ .counter #labelState110:after {
+  content: "-";
+}
+#state110:checked ~ #state21:checked {
+  counter-increment: einser 9;
+}
+#state110:checked ~ #state21:checked ~ .counter #labelState19 {
+  display: block;
+  right: 0;
+}
+#state110:checked ~ #state21:checked ~ .counter #labelState111 {
+  display: block;
+  left: 0;
+}
+#state110:checked ~ #state21:checked ~ .counter #labelState111:after {
+  content: "-";
+}
+#state10:checked ~ #state23:checked {
+  counter-increment: einser 39;
+}
+#state10:checked ~ #state23:checked ~ .counter #labelState24 {
+  display: block;
+  right: 0;
+}
+#state10:checked ~ #state23:checked ~ .counter #labelState11 {
+  display: block;
+  left: 0;
+}
+#state10:checked ~ #state23:checked ~ .counter #labelState11:after {
+  content: "-";
+}
+#state11:checked ~ #state23:checked {
+  counter-increment: einser 38;
+}
+#state11:checked ~ #state23:checked ~ .counter #labelState10 {
+  display: block;
+  right: 0;
+}
+#state11:checked ~ #state23:checked ~ .counter #labelState12 {
+  display: block;
+  left: 0;
+}
+#state11:checked ~ #state23:checked ~ .counter #labelState12:after {
+  content: "-";
+}
+#state12:checked ~ #state23:checked {
+  counter-increment: einser 37;
+}
+#state12:checked ~ #state23:checked ~ .counter #labelState11 {
+  display: block;
+  right: 0;
+}
+#state12:checked ~ #state23:checked ~ .counter #labelState13 {
+  display: block;
+  left: 0;
+}
+#state12:checked ~ #state23:checked ~ .counter #labelState13:after {
+  content: "-";
+}
+#state13:checked ~ #state23:checked {
+  counter-increment: einser 36;
+}
+#state13:checked ~ #state23:checked ~ .counter #labelState12 {
+  display: block;
+  right: 0;
+}
+#state13:checked ~ #state23:checked ~ .counter #labelState14 {
+  display: block;
+  left: 0;
+}
+#state13:checked ~ #state23:checked ~ .counter #labelState14:after {
+  content: "-";
+}
+#state14:checked ~ #state23:checked {
+  counter-increment: einser 35;
+}
+#state14:checked ~ #state23:checked ~ .counter #labelState13 {
+  display: block;
+  right: 0;
+}
+#state14:checked ~ #state23:checked ~ .counter #labelState15 {
+  display: block;
+  left: 0;
+}
+#state14:checked ~ #state23:checked ~ .counter #labelState15:after {
+  content: "-";
+}
+#state15:checked ~ #state23:checked {
+  counter-increment: einser 34;
+}
+#state15:checked ~ #state23:checked ~ .counter #labelState14 {
+  display: block;
+  right: 0;
+}
+#state15:checked ~ #state23:checked ~ .counter #labelState16 {
+  display: block;
+  left: 0;
+}
+#state15:checked ~ #state23:checked ~ .counter #labelState16:after {
+  content: "-";
+}
+#state16:checked ~ #state23:checked {
+  counter-increment: einser 33;
+}
+#state16:checked ~ #state23:checked ~ .counter #labelState15 {
+  display: block;
+  right: 0;
+}
+#state16:checked ~ #state23:checked ~ .counter #labelState17 {
+  display: block;
+  left: 0;
+}
+#state16:checked ~ #state23:checked ~ .counter #labelState17:after {
+  content: "-";
+}
+#state17:checked ~ #state23:checked {
+  counter-increment: einser 32;
+}
+#state17:checked ~ #state23:checked ~ .counter #labelState16 {
+  display: block;
+  right: 0;
+}
+#state17:checked ~ #state23:checked ~ .counter #labelState18 {
+  display: block;
+  left: 0;
+}
+#state17:checked ~ #state23:checked ~ .counter #labelState18:after {
+  content: "-";
+}
+#state18:checked ~ #state23:checked {
+  counter-increment: einser 31;
+}
+#state18:checked ~ #state23:checked ~ .counter #labelState17 {
+  display: block;
+  right: 0;
+}
+#state18:checked ~ #state23:checked ~ .counter #labelState19 {
+  display: block;
+  left: 0;
+}
+#state18:checked ~ #state23:checked ~ .counter #labelState19:after {
+  content: "-";
+}
+#state19:checked ~ #state23:checked {
+  counter-increment: einser 30;
+}
+#state19:checked ~ #state23:checked ~ .counter #labelState18 {
+  display: block;
+  right: 0;
+}
+#state19:checked ~ #state23:checked ~ .counter #labelState22 {
+  display: block;
+  left: 0;
+}
+#state19:checked ~ #state23:checked ~ .counter #labelState22:after {
+  content: "-";
+}
+#state19:checked ~ #state23:checked ~ .counter #labelState110 {
+  display: block;
+  left: 0;
+}
+#state19:checked ~ #state23:checked ~ .counter #labelState110:after {
+  content: "-";
+}
+#state110:checked ~ #state23:checked {
+  counter-increment: einser 29;
+}
+#state110:checked ~ #state23:checked ~ .counter #labelState19 {
+  display: block;
+  right: 0;
+}
+#state110:checked ~ #state23:checked ~ .counter #labelState111 {
+  display: block;
+  left: 0;
+}
+#state110:checked ~ #state23:checked ~ .counter #labelState111:after {
+  content: "-";
+}
+#state10:checked ~ #state25:checked {
+  counter-increment: einser 59;
+}
+#state10:checked ~ #state25:checked ~ .counter #labelState26 {
+  display: block;
+  right: 0;
+}
+#state10:checked ~ #state25:checked ~ .counter #labelState11 {
+  display: block;
+  left: 0;
+}
+#state10:checked ~ #state25:checked ~ .counter #labelState11:after {
+  content: "-";
+}
+#state11:checked ~ #state25:checked {
+  counter-increment: einser 58;
+}
+#state11:checked ~ #state25:checked ~ .counter #labelState10 {
+  display: block;
+  right: 0;
+}
+#state11:checked ~ #state25:checked ~ .counter #labelState12 {
+  display: block;
+  left: 0;
+}
+#state11:checked ~ #state25:checked ~ .counter #labelState12:after {
+  content: "-";
+}
+#state12:checked ~ #state25:checked {
+  counter-increment: einser 57;
+}
+#state12:checked ~ #state25:checked ~ .counter #labelState11 {
+  display: block;
+  right: 0;
+}
+#state12:checked ~ #state25:checked ~ .counter #labelState13 {
+  display: block;
+  left: 0;
+}
+#state12:checked ~ #state25:checked ~ .counter #labelState13:after {
+  content: "-";
+}
+#state13:checked ~ #state25:checked {
+  counter-increment: einser 56;
+}
+#state13:checked ~ #state25:checked ~ .counter #labelState12 {
+  display: block;
+  right: 0;
+}
+#state13:checked ~ #state25:checked ~ .counter #labelState14 {
+  display: block;
+  left: 0;
+}
+#state13:checked ~ #state25:checked ~ .counter #labelState14:after {
+  content: "-";
+}
+#state14:checked ~ #state25:checked {
+  counter-increment: einser 55;
+}
+#state14:checked ~ #state25:checked ~ .counter #labelState13 {
+  display: block;
+  right: 0;
+}
+#state14:checked ~ #state25:checked ~ .counter #labelState15 {
+  display: block;
+  left: 0;
+}
+#state14:checked ~ #state25:checked ~ .counter #labelState15:after {
+  content: "-";
+}
+#state15:checked ~ #state25:checked {
+  counter-increment: einser 54;
+}
+#state15:checked ~ #state25:checked ~ .counter #labelState14 {
+  display: block;
+  right: 0;
+}
+#state15:checked ~ #state25:checked ~ .counter #labelState16 {
+  display: block;
+  left: 0;
+}
+#state15:checked ~ #state25:checked ~ .counter #labelState16:after {
+  content: "-";
+}
+#state16:checked ~ #state25:checked {
+  counter-increment: einser 53;
+}
+#state16:checked ~ #state25:checked ~ .counter #labelState15 {
+  display: block;
+  right: 0;
+}
+#state16:checked ~ #state25:checked ~ .counter #labelState17 {
+  display: block;
+  left: 0;
+}
+#state16:checked ~ #state25:checked ~ .counter #labelState17:after {
+  content: "-";
+}
+#state17:checked ~ #state25:checked {
+  counter-increment: einser 52;
+}
+#state17:checked ~ #state25:checked ~ .counter #labelState16 {
+  display: block;
+  right: 0;
+}
+#state17:checked ~ #state25:checked ~ .counter #labelState18 {
+  display: block;
+  left: 0;
+}
+#state17:checked ~ #state25:checked ~ .counter #labelState18:after {
+  content: "-";
+}
+#state18:checked ~ #state25:checked {
+  counter-increment: einser 51;
+}
+#state18:checked ~ #state25:checked ~ .counter #labelState17 {
+  display: block;
+  right: 0;
+}
+#state18:checked ~ #state25:checked ~ .counter #labelState19 {
+  display: block;
+  left: 0;
+}
+#state18:checked ~ #state25:checked ~ .counter #labelState19:after {
+  content: "-";
+}
+#state19:checked ~ #state25:checked {
+  counter-increment: einser 50;
+}
+#state19:checked ~ #state25:checked ~ .counter #labelState18 {
+  display: block;
+  right: 0;
+}
+#state19:checked ~ #state25:checked ~ .counter #labelState24 {
+  display: block;
+  left: 0;
+}
+#state19:checked ~ #state25:checked ~ .counter #labelState24:after {
+  content: "-";
+}
+#state19:checked ~ #state25:checked ~ .counter #labelState110 {
+  display: block;
+  left: 0;
+}
+#state19:checked ~ #state25:checked ~ .counter #labelState110:after {
+  content: "-";
+}
+#state110:checked ~ #state25:checked {
+  counter-increment: einser 49;
+}
+#state110:checked ~ #state25:checked ~ .counter #labelState19 {
+  display: block;
+  right: 0;
+}
+#state110:checked ~ #state25:checked ~ .counter #labelState111 {
+  display: block;
+  left: 0;
+}
+#state110:checked ~ #state25:checked ~ .counter #labelState111:after {
+  content: "-";
+}
+#state10:checked ~ #state27:checked {
+  counter-increment: einser 79;
+}
+#state10:checked ~ #state27:checked ~ .counter #labelState28 {
+  display: block;
+  right: 0;
+}
+#state10:checked ~ #state27:checked ~ .counter #labelState11 {
+  display: block;
+  left: 0;
+}
+#state10:checked ~ #state27:checked ~ .counter #labelState11:after {
+  content: "-";
+}
+#state11:checked ~ #state27:checked {
+  counter-increment: einser 78;
+}
+#state11:checked ~ #state27:checked ~ .counter #labelState10 {
+  display: block;
+  right: 0;
+}
+#state11:checked ~ #state27:checked ~ .counter #labelState12 {
+  display: block;
+  left: 0;
+}
+#state11:checked ~ #state27:checked ~ .counter #labelState12:after {
+  content: "-";
+}
+#state12:checked ~ #state27:checked {
+  counter-increment: einser 77;
+}
+#state12:checked ~ #state27:checked ~ .counter #labelState11 {
+  display: block;
+  right: 0;
+}
+#state12:checked ~ #state27:checked ~ .counter #labelState13 {
+  display: block;
+  left: 0;
+}
+#state12:checked ~ #state27:checked ~ .counter #labelState13:after {
+  content: "-";
+}
+#state13:checked ~ #state27:checked {
+  counter-increment: einser 76;
+}
+#state13:checked ~ #state27:checked ~ .counter #labelState12 {
+  display: block;
+  right: 0;
+}
+#state13:checked ~ #state27:checked ~ .counter #labelState14 {
+  display: block;
+  left: 0;
+}
+#state13:checked ~ #state27:checked ~ .counter #labelState14:after {
+  content: "-";
+}
+#state14:checked ~ #state27:checked {
+  counter-increment: einser 75;
+}
+#state14:checked ~ #state27:checked ~ .counter #labelState13 {
+  display: block;
+  right: 0;
+}
+#state14:checked ~ #state27:checked ~ .counter #labelState15 {
+  display: block;
+  left: 0;
+}
+#state14:checked ~ #state27:checked ~ .counter #labelState15:after {
+  content: "-";
+}
+#state15:checked ~ #state27:checked {
+  counter-increment: einser 74;
+}
+#state15:checked ~ #state27:checked ~ .counter #labelState14 {
+  display: block;
+  right: 0;
+}
+#state15:checked ~ #state27:checked ~ .counter #labelState16 {
+  display: block;
+  left: 0;
+}
+#state15:checked ~ #state27:checked ~ .counter #labelState16:after {
+  content: "-";
+}
+#state16:checked ~ #state27:checked {
+  counter-increment: einser 73;
+}
+#state16:checked ~ #state27:checked ~ .counter #labelState15 {
+  display: block;
+  right: 0;
+}
+#state16:checked ~ #state27:checked ~ .counter #labelState17 {
+  display: block;
+  left: 0;
+}
+#state16:checked ~ #state27:checked ~ .counter #labelState17:after {
+  content: "-";
+}
+#state17:checked ~ #state27:checked {
+  counter-increment: einser 72;
+}
+#state17:checked ~ #state27:checked ~ .counter #labelState16 {
+  display: block;
+  right: 0;
+}
+#state17:checked ~ #state27:checked ~ .counter #labelState18 {
+  display: block;
+  left: 0;
+}
+#state17:checked ~ #state27:checked ~ .counter #labelState18:after {
+  content: "-";
+}
+#state18:checked ~ #state27:checked {
+  counter-increment: einser 71;
+}
+#state18:checked ~ #state27:checked ~ .counter #labelState17 {
+  display: block;
+  right: 0;
+}
+#state18:checked ~ #state27:checked ~ .counter #labelState19 {
+  display: block;
+  left: 0;
+}
+#state18:checked ~ #state27:checked ~ .counter #labelState19:after {
+  content: "-";
+}
+#state19:checked ~ #state27:checked {
+  counter-increment: einser 70;
+}
+#state19:checked ~ #state27:checked ~ .counter #labelState18 {
+  display: block;
+  right: 0;
+}
+#state19:checked ~ #state27:checked ~ .counter #labelState26 {
+  display: block;
+  left: 0;
+}
+#state19:checked ~ #state27:checked ~ .counter #labelState26:after {
+  content: "-";
+}
+#state19:checked ~ #state27:checked ~ .counter #labelState110 {
+  display: block;
+  left: 0;
+}
+#state19:checked ~ #state27:checked ~ .counter #labelState110:after {
+  content: "-";
+}
+#state110:checked ~ #state27:checked {
+  counter-increment: einser 69;
+}
+#state110:checked ~ #state27:checked ~ .counter #labelState19 {
+  display: block;
+  right: 0;
+}
+#state110:checked ~ #state27:checked ~ .counter #labelState111 {
+  display: block;
+  left: 0;
+}
+#state110:checked ~ #state27:checked ~ .counter #labelState111:after {
+  content: "-";
+}
+#state10:checked ~ #state29:checked {
+  counter-increment: einser 99;
+}
+#state10:checked ~ #state29:checked ~ .counter #labelState210 {
+  display: block;
+  right: 0;
+}
+#state10:checked ~ #state29:checked ~ .counter #labelState11 {
+  display: block;
+  left: 0;
+}
+#state10:checked ~ #state29:checked ~ .counter #labelState11:after {
+  content: "-";
+}
+#state11:checked ~ #state29:checked {
+  counter-increment: einser 98;
+}
+#state11:checked ~ #state29:checked ~ .counter #labelState10 {
+  display: block;
+  right: 0;
+}
+#state11:checked ~ #state29:checked ~ .counter #labelState12 {
+  display: block;
+  left: 0;
+}
+#state11:checked ~ #state29:checked ~ .counter #labelState12:after {
+  content: "-";
+}
+#state12:checked ~ #state29:checked {
+  counter-increment: einser 97;
+}
+#state12:checked ~ #state29:checked ~ .counter #labelState11 {
+  display: block;
+  right: 0;
+}
+#state12:checked ~ #state29:checked ~ .counter #labelState13 {
+  display: block;
+  left: 0;
+}
+#state12:checked ~ #state29:checked ~ .counter #labelState13:after {
+  content: "-";
+}
+#state13:checked ~ #state29:checked {
+  counter-increment: einser 96;
+}
+#state13:checked ~ #state29:checked ~ .counter #labelState12 {
+  display: block;
+  right: 0;
+}
+#state13:checked ~ #state29:checked ~ .counter #labelState14 {
+  display: block;
+  left: 0;
+}
+#state13:checked ~ #state29:checked ~ .counter #labelState14:after {
+  content: "-";
+}
+#state14:checked ~ #state29:checked {
+  counter-increment: einser 95;
+}
+#state14:checked ~ #state29:checked ~ .counter #labelState13 {
+  display: block;
+  right: 0;
+}
+#state14:checked ~ #state29:checked ~ .counter #labelState15 {
+  display: block;
+  left: 0;
+}
+#state14:checked ~ #state29:checked ~ .counter #labelState15:after {
+  content: "-";
+}
+#state15:checked ~ #state29:checked {
+  counter-increment: einser 94;
+}
+#state15:checked ~ #state29:checked ~ .counter #labelState14 {
+  display: block;
+  right: 0;
+}
+#state15:checked ~ #state29:checked ~ .counter #labelState16 {
+  display: block;
+  left: 0;
+}
+#state15:checked ~ #state29:checked ~ .counter #labelState16:after {
+  content: "-";
+}
+#state16:checked ~ #state29:checked {
+  counter-increment: einser 93;
+}
+#state16:checked ~ #state29:checked ~ .counter #labelState15 {
+  display: block;
+  right: 0;
+}
+#state16:checked ~ #state29:checked ~ .counter #labelState17 {
+  display: block;
+  left: 0;
+}
+#state16:checked ~ #state29:checked ~ .counter #labelState17:after {
+  content: "-";
+}
+#state17:checked ~ #state29:checked {
+  counter-increment: einser 92;
+}
+#state17:checked ~ #state29:checked ~ .counter #labelState16 {
+  display: block;
+  right: 0;
+}
+#state17:checked ~ #state29:checked ~ .counter #labelState18 {
+  display: block;
+  left: 0;
+}
+#state17:checked ~ #state29:checked ~ .counter #labelState18:after {
+  content: "-";
+}
+#state18:checked ~ #state29:checked {
+  counter-increment: einser 91;
+}
+#state18:checked ~ #state29:checked ~ .counter #labelState17 {
+  display: block;
+  right: 0;
+}
+#state18:checked ~ #state29:checked ~ .counter #labelState19 {
+  display: block;
+  left: 0;
+}
+#state18:checked ~ #state29:checked ~ .counter #labelState19:after {
+  content: "-";
+}
+#state19:checked ~ #state29:checked {
+  counter-increment: einser 90;
+}
+#state19:checked ~ #state29:checked ~ .counter #labelState18 {
+  display: block;
+  right: 0;
+}
+#state19:checked ~ #state29:checked ~ .counter #labelState28 {
+  display: block;
+  left: 0;
+}
+#state19:checked ~ #state29:checked ~ .counter #labelState28:after {
+  content: "-";
+}
+#state19:checked ~ #state29:checked ~ .counter #labelState110 {
+  display: block;
+  left: 0;
+}
+#state19:checked ~ #state29:checked ~ .counter #labelState110:after {
+  content: "-";
+}
+#state110:checked ~ #state29:checked {
+  counter-increment: einser 89;
+}
+#state110:checked ~ #state29:checked ~ .counter #labelState19 {
+  display: block;
+  right: 0;
+}
+#state110:checked ~ #state29:checked ~ .counter #labelState111 {
+  display: block;
+  left: 0;
+}
+#state110:checked ~ #state29:checked ~ .counter #labelState111:after {
+  content: "-";
+}
+#state10:checked ~ #state20:checked {
+  counter-increment: einser 0;
+}
+#state10:checked ~ #state20:checked ~ .counter #labelState11 {
+  display: block;
+  right: 0;
+}
+#state10:checked ~ #state20:checked ~ .counter #labelState1-1 {
+  display: block;
+  left: 0;
+}
+#state10:checked ~ #state20:checked ~ .counter #labelState1-1:after {
+  content: "-";
+}
+#state11:checked ~ #state20:checked {
+  counter-increment: einser 1;
+}
+#state11:checked ~ #state20:checked ~ .counter #labelState12 {
+  display: block;
+  right: 0;
+}
+#state11:checked ~ #state20:checked ~ .counter #labelState10 {
+  display: block;
+  left: 0;
+}
+#state11:checked ~ #state20:checked ~ .counter #labelState10:after {
+  content: "-";
+}
+#state12:checked ~ #state20:checked {
+  counter-increment: einser 2;
+}
+#state12:checked ~ #state20:checked ~ .counter #labelState13 {
+  display: block;
+  right: 0;
+}
+#state12:checked ~ #state20:checked ~ .counter #labelState11 {
+  display: block;
+  left: 0;
+}
+#state12:checked ~ #state20:checked ~ .counter #labelState11:after {
+  content: "-";
+}
+#state13:checked ~ #state20:checked {
+  counter-increment: einser 3;
+}
+#state13:checked ~ #state20:checked ~ .counter #labelState14 {
+  display: block;
+  right: 0;
+}
+#state13:checked ~ #state20:checked ~ .counter #labelState12 {
+  display: block;
+  left: 0;
+}
+#state13:checked ~ #state20:checked ~ .counter #labelState12:after {
+  content: "-";
+}
+#state14:checked ~ #state20:checked {
+  counter-increment: einser 4;
+}
+#state14:checked ~ #state20:checked ~ .counter #labelState15 {
+  display: block;
+  right: 0;
+}
+#state14:checked ~ #state20:checked ~ .counter #labelState13 {
+  display: block;
+  left: 0;
+}
+#state14:checked ~ #state20:checked ~ .counter #labelState13:after {
+  content: "-";
+}
+#state15:checked ~ #state20:checked {
+  counter-increment: einser 5;
+}
+#state15:checked ~ #state20:checked ~ .counter #labelState16 {
+  display: block;
+  right: 0;
+}
+#state15:checked ~ #state20:checked ~ .counter #labelState14 {
+  display: block;
+  left: 0;
+}
+#state15:checked ~ #state20:checked ~ .counter #labelState14:after {
+  content: "-";
+}
+#state16:checked ~ #state20:checked {
+  counter-increment: einser 6;
+}
+#state16:checked ~ #state20:checked ~ .counter #labelState17 {
+  display: block;
+  right: 0;
+}
+#state16:checked ~ #state20:checked ~ .counter #labelState15 {
+  display: block;
+  left: 0;
+}
+#state16:checked ~ #state20:checked ~ .counter #labelState15:after {
+  content: "-";
+}
+#state17:checked ~ #state20:checked {
+  counter-increment: einser 7;
+}
+#state17:checked ~ #state20:checked ~ .counter #labelState18 {
+  display: block;
+  right: 0;
+}
+#state17:checked ~ #state20:checked ~ .counter #labelState16 {
+  display: block;
+  left: 0;
+}
+#state17:checked ~ #state20:checked ~ .counter #labelState16:after {
+  content: "-";
+}
+#state18:checked ~ #state20:checked {
+  counter-increment: einser 8;
+}
+#state18:checked ~ #state20:checked ~ .counter #labelState19 {
+  display: block;
+  right: 0;
+}
+#state18:checked ~ #state20:checked ~ .counter #labelState17 {
+  display: block;
+  left: 0;
+}
+#state18:checked ~ #state20:checked ~ .counter #labelState17:after {
+  content: "-";
+}
+#state19:checked ~ #state20:checked {
+  counter-increment: einser 9;
+}
+#state19:checked ~ #state20:checked ~ .counter #labelState21 {
+  display: block;
+  right: 0;
+}
+#state19:checked ~ #state20:checked ~ .counter #labelState18 {
+  display: block;
+  left: 0;
+}
+#state19:checked ~ #state20:checked ~ .counter #labelState18:after {
+  content: "-";
+}
+#state110:checked ~ #state20:checked {
+  counter-increment: einser 10;
+}
+#state19:checked ~ #state20:checked ~ .counter #labelState21 {
+  display: block;
+  right: 0;
+}
+#state110:checked ~ #state20:checked ~ .counter #labelState19 {
+  display: block;
+  left: 0;
+}
+#state110:checked ~ #state20:checked ~ .counter #labelState19:after {
+  content: "-";
+}
+#state10:checked ~ #state22:checked {
+  counter-increment: einser 20;
+}
+#state10:checked ~ #state22:checked ~ .counter #labelState11 {
+  display: block;
+  right: 0;
+}
+#state10:checked ~ #state22:checked ~ .counter #labelState21 {
+  display: block;
+  left: 0;
+}
+#state10:checked ~ #state22:checked ~ .counter #labelState21:after {
+  content: "-";
+}
+#state10:checked ~ #state22:checked ~ .counter #labelState1-1 {
+  display: block;
+  left: 0;
+}
+#state10:checked ~ #state22:checked ~ .counter #labelState1-1:after {
+  content: "-";
+}
+#state11:checked ~ #state22:checked {
+  counter-increment: einser 21;
+}
+#state11:checked ~ #state22:checked ~ .counter #labelState12 {
+  display: block;
+  right: 0;
+}
+#state11:checked ~ #state22:checked ~ .counter #labelState10 {
+  display: block;
+  left: 0;
+}
+#state11:checked ~ #state22:checked ~ .counter #labelState10:after {
+  content: "-";
+}
+#state12:checked ~ #state22:checked {
+  counter-increment: einser 22;
+}
+#state12:checked ~ #state22:checked ~ .counter #labelState13 {
+  display: block;
+  right: 0;
+}
+#state12:checked ~ #state22:checked ~ .counter #labelState11 {
+  display: block;
+  left: 0;
+}
+#state12:checked ~ #state22:checked ~ .counter #labelState11:after {
+  content: "-";
+}
+#state13:checked ~ #state22:checked {
+  counter-increment: einser 23;
+}
+#state13:checked ~ #state22:checked ~ .counter #labelState14 {
+  display: block;
+  right: 0;
+}
+#state13:checked ~ #state22:checked ~ .counter #labelState12 {
+  display: block;
+  left: 0;
+}
+#state13:checked ~ #state22:checked ~ .counter #labelState12:after {
+  content: "-";
+}
+#state14:checked ~ #state22:checked {
+  counter-increment: einser 24;
+}
+#state14:checked ~ #state22:checked ~ .counter #labelState15 {
+  display: block;
+  right: 0;
+}
+#state14:checked ~ #state22:checked ~ .counter #labelState13 {
+  display: block;
+  left: 0;
+}
+#state14:checked ~ #state22:checked ~ .counter #labelState13:after {
+  content: "-";
+}
+#state15:checked ~ #state22:checked {
+  counter-increment: einser 25;
+}
+#state15:checked ~ #state22:checked ~ .counter #labelState16 {
+  display: block;
+  right: 0;
+}
+#state15:checked ~ #state22:checked ~ .counter #labelState14 {
+  display: block;
+  left: 0;
+}
+#state15:checked ~ #state22:checked ~ .counter #labelState14:after {
+  content: "-";
+}
+#state16:checked ~ #state22:checked {
+  counter-increment: einser 26;
+}
+#state16:checked ~ #state22:checked ~ .counter #labelState17 {
+  display: block;
+  right: 0;
+}
+#state16:checked ~ #state22:checked ~ .counter #labelState15 {
+  display: block;
+  left: 0;
+}
+#state16:checked ~ #state22:checked ~ .counter #labelState15:after {
+  content: "-";
+}
+#state17:checked ~ #state22:checked {
+  counter-increment: einser 27;
+}
+#state17:checked ~ #state22:checked ~ .counter #labelState18 {
+  display: block;
+  right: 0;
+}
+#state17:checked ~ #state22:checked ~ .counter #labelState16 {
+  display: block;
+  left: 0;
+}
+#state17:checked ~ #state22:checked ~ .counter #labelState16:after {
+  content: "-";
+}
+#state18:checked ~ #state22:checked {
+  counter-increment: einser 28;
+}
+#state18:checked ~ #state22:checked ~ .counter #labelState19 {
+  display: block;
+  right: 0;
+}
+#state18:checked ~ #state22:checked ~ .counter #labelState17 {
+  display: block;
+  left: 0;
+}
+#state18:checked ~ #state22:checked ~ .counter #labelState17:after {
+  content: "-";
+}
+#state19:checked ~ #state22:checked {
+  counter-increment: einser 29;
+}
+#state19:checked ~ #state22:checked ~ .counter #labelState23 {
+  display: block;
+  right: 0;
+}
+#state19:checked ~ #state22:checked ~ .counter #labelState18 {
+  display: block;
+  left: 0;
+}
+#state19:checked ~ #state22:checked ~ .counter #labelState18:after {
+  content: "-";
+}
+#state110:checked ~ #state22:checked {
+  counter-increment: einser 30;
+}
+#state19:checked ~ #state22:checked ~ .counter #labelState23 {
+  display: block;
+  right: 0;
+}
+#state110:checked ~ #state22:checked ~ .counter #labelState19 {
+  display: block;
+  left: 0;
+}
+#state110:checked ~ #state22:checked ~ .counter #labelState19:after {
+  content: "-";
+}
+#state10:checked ~ #state24:checked {
+  counter-increment: einser 40;
+}
+#state10:checked ~ #state24:checked ~ .counter #labelState11 {
+  display: block;
+  right: 0;
+}
+#state10:checked ~ #state24:checked ~ .counter #labelState23 {
+  display: block;
+  left: 0;
+}
+#state10:checked ~ #state24:checked ~ .counter #labelState23:after {
+  content: "-";
+}
+#state10:checked ~ #state24:checked ~ .counter #labelState1-1 {
+  display: block;
+  left: 0;
+}
+#state10:checked ~ #state24:checked ~ .counter #labelState1-1:after {
+  content: "-";
+}
+#state11:checked ~ #state24:checked {
+  counter-increment: einser 41;
+}
+#state11:checked ~ #state24:checked ~ .counter #labelState12 {
+  display: block;
+  right: 0;
+}
+#state11:checked ~ #state24:checked ~ .counter #labelState10 {
+  display: block;
+  left: 0;
+}
+#state11:checked ~ #state24:checked ~ .counter #labelState10:after {
+  content: "-";
+}
+#state12:checked ~ #state24:checked {
+  counter-increment: einser 42;
+}
+#state12:checked ~ #state24:checked ~ .counter #labelState13 {
+  display: block;
+  right: 0;
+}
+#state12:checked ~ #state24:checked ~ .counter #labelState11 {
+  display: block;
+  left: 0;
+}
+#state12:checked ~ #state24:checked ~ .counter #labelState11:after {
+  content: "-";
+}
+#state13:checked ~ #state24:checked {
+  counter-increment: einser 43;
+}
+#state13:checked ~ #state24:checked ~ .counter #labelState14 {
+  display: block;
+  right: 0;
+}
+#state13:checked ~ #state24:checked ~ .counter #labelState12 {
+  display: block;
+  left: 0;
+}
+#state13:checked ~ #state24:checked ~ .counter #labelState12:after {
+  content: "-";
+}
+#state14:checked ~ #state24:checked {
+  counter-increment: einser 44;
+}
+#state14:checked ~ #state24:checked ~ .counter #labelState15 {
+  display: block;
+  right: 0;
+}
+#state14:checked ~ #state24:checked ~ .counter #labelState13 {
+  display: block;
+  left: 0;
+}
+#state14:checked ~ #state24:checked ~ .counter #labelState13:after {
+  content: "-";
+}
+#state15:checked ~ #state24:checked {
+  counter-increment: einser 45;
+}
+#state15:checked ~ #state24:checked ~ .counter #labelState16 {
+  display: block;
+  right: 0;
+}
+#state15:checked ~ #state24:checked ~ .counter #labelState14 {
+  display: block;
+  left: 0;
+}
+#state15:checked ~ #state24:checked ~ .counter #labelState14:after {
+  content: "-";
+}
+#state16:checked ~ #state24:checked {
+  counter-increment: einser 46;
+}
+#state16:checked ~ #state24:checked ~ .counter #labelState17 {
+  display: block;
+  right: 0;
+}
+#state16:checked ~ #state24:checked ~ .counter #labelState15 {
+  display: block;
+  left: 0;
+}
+#state16:checked ~ #state24:checked ~ .counter #labelState15:after {
+  content: "-";
+}
+#state17:checked ~ #state24:checked {
+  counter-increment: einser 47;
+}
+#state17:checked ~ #state24:checked ~ .counter #labelState18 {
+  display: block;
+  right: 0;
+}
+#state17:checked ~ #state24:checked ~ .counter #labelState16 {
+  display: block;
+  left: 0;
+}
+#state17:checked ~ #state24:checked ~ .counter #labelState16:after {
+  content: "-";
+}
+#state18:checked ~ #state24:checked {
+  counter-increment: einser 48;
+}
+#state18:checked ~ #state24:checked ~ .counter #labelState19 {
+  display: block;
+  right: 0;
+}
+#state18:checked ~ #state24:checked ~ .counter #labelState17 {
+  display: block;
+  left: 0;
+}
+#state18:checked ~ #state24:checked ~ .counter #labelState17:after {
+  content: "-";
+}
+#state19:checked ~ #state24:checked {
+  counter-increment: einser 49;
+}
+#state19:checked ~ #state24:checked ~ .counter #labelState25 {
+  display: block;
+  right: 0;
+}
+#state19:checked ~ #state24:checked ~ .counter #labelState18 {
+  display: block;
+  left: 0;
+}
+#state19:checked ~ #state24:checked ~ .counter #labelState18:after {
+  content: "-";
+}
+#state110:checked ~ #state24:checked {
+  counter-increment: einser 50;
+}
+#state19:checked ~ #state24:checked ~ .counter #labelState25 {
+  display: block;
+  right: 0;
+}
+#state110:checked ~ #state24:checked ~ .counter #labelState19 {
+  display: block;
+  left: 0;
+}
+#state110:checked ~ #state24:checked ~ .counter #labelState19:after {
+  content: "-";
+}
+#state10:checked ~ #state26:checked {
+  counter-increment: einser 60;
+}
+#state10:checked ~ #state26:checked ~ .counter #labelState11 {
+  display: block;
+  right: 0;
+}
+#state10:checked ~ #state26:checked ~ .counter #labelState25 {
+  display: block;
+  left: 0;
+}
+#state10:checked ~ #state26:checked ~ .counter #labelState25:after {
+  content: "-";
+}
+#state10:checked ~ #state26:checked ~ .counter #labelState1-1 {
+  display: block;
+  left: 0;
+}
+#state10:checked ~ #state26:checked ~ .counter #labelState1-1:after {
+  content: "-";
+}
+#state11:checked ~ #state26:checked {
+  counter-increment: einser 61;
+}
+#state11:checked ~ #state26:checked ~ .counter #labelState12 {
+  display: block;
+  right: 0;
+}
+#state11:checked ~ #state26:checked ~ .counter #labelState10 {
+  display: block;
+  left: 0;
+}
+#state11:checked ~ #state26:checked ~ .counter #labelState10:after {
+  content: "-";
+}
+#state12:checked ~ #state26:checked {
+  counter-increment: einser 62;
+}
+#state12:checked ~ #state26:checked ~ .counter #labelState13 {
+  display: block;
+  right: 0;
+}
+#state12:checked ~ #state26:checked ~ .counter #labelState11 {
+  display: block;
+  left: 0;
+}
+#state12:checked ~ #state26:checked ~ .counter #labelState11:after {
+  content: "-";
+}
+#state13:checked ~ #state26:checked {
+  counter-increment: einser 63;
+}
+#state13:checked ~ #state26:checked ~ .counter #labelState14 {
+  display: block;
+  right: 0;
+}
+#state13:checked ~ #state26:checked ~ .counter #labelState12 {
+  display: block;
+  left: 0;
+}
+#state13:checked ~ #state26:checked ~ .counter #labelState12:after {
+  content: "-";
+}
+#state14:checked ~ #state26:checked {
+  counter-increment: einser 64;
+}
+#state14:checked ~ #state26:checked ~ .counter #labelState15 {
+  display: block;
+  right: 0;
+}
+#state14:checked ~ #state26:checked ~ .counter #labelState13 {
+  display: block;
+  left: 0;
+}
+#state14:checked ~ #state26:checked ~ .counter #labelState13:after {
+  content: "-";
+}
+#state15:checked ~ #state26:checked {
+  counter-increment: einser 65;
+}
+#state15:checked ~ #state26:checked ~ .counter #labelState16 {
+  display: block;
+  right: 0;
+}
+#state15:checked ~ #state26:checked ~ .counter #labelState14 {
+  display: block;
+  left: 0;
+}
+#state15:checked ~ #state26:checked ~ .counter #labelState14:after {
+  content: "-";
+}
+#state16:checked ~ #state26:checked {
+  counter-increment: einser 66;
+}
+#state16:checked ~ #state26:checked ~ .counter #labelState17 {
+  display: block;
+  right: 0;
+}
+#state16:checked ~ #state26:checked ~ .counter #labelState15 {
+  display: block;
+  left: 0;
+}
+#state16:checked ~ #state26:checked ~ .counter #labelState15:after {
+  content: "-";
+}
+#state17:checked ~ #state26:checked {
+  counter-increment: einser 67;
+}
+#state17:checked ~ #state26:checked ~ .counter #labelState18 {
+  display: block;
+  right: 0;
+}
+#state17:checked ~ #state26:checked ~ .counter #labelState16 {
+  display: block;
+  left: 0;
+}
+#state17:checked ~ #state26:checked ~ .counter #labelState16:after {
+  content: "-";
+}
+#state18:checked ~ #state26:checked {
+  counter-increment: einser 68;
+}
+#state18:checked ~ #state26:checked ~ .counter #labelState19 {
+  display: block;
+  right: 0;
+}
+#state18:checked ~ #state26:checked ~ .counter #labelState17 {
+  display: block;
+  left: 0;
+}
+#state18:checked ~ #state26:checked ~ .counter #labelState17:after {
+  content: "-";
+}
+#state19:checked ~ #state26:checked {
+  counter-increment: einser 69;
+}
+#state19:checked ~ #state26:checked ~ .counter #labelState27 {
+  display: block;
+  right: 0;
+}
+#state19:checked ~ #state26:checked ~ .counter #labelState18 {
+  display: block;
+  left: 0;
+}
+#state19:checked ~ #state26:checked ~ .counter #labelState18:after {
+  content: "-";
+}
+#state110:checked ~ #state26:checked {
+  counter-increment: einser 70;
+}
+#state19:checked ~ #state26:checked ~ .counter #labelState27 {
+  display: block;
+  right: 0;
+}
+#state110:checked ~ #state26:checked ~ .counter #labelState19 {
+  display: block;
+  left: 0;
+}
+#state110:checked ~ #state26:checked ~ .counter #labelState19:after {
+  content: "-";
+}
+#state10:checked ~ #state28:checked {
+  counter-increment: einser 80;
+}
+#state10:checked ~ #state28:checked ~ .counter #labelState11 {
+  display: block;
+  right: 0;
+}
+#state10:checked ~ #state28:checked ~ .counter #labelState27 {
+  display: block;
+  left: 0;
+}
+#state10:checked ~ #state28:checked ~ .counter #labelState27:after {
+  content: "-";
+}
+#state10:checked ~ #state28:checked ~ .counter #labelState1-1 {
+  display: block;
+  left: 0;
+}
+#state10:checked ~ #state28:checked ~ .counter #labelState1-1:after {
+  content: "-";
+}
+#state11:checked ~ #state28:checked {
+  counter-increment: einser 81;
+}
+#state11:checked ~ #state28:checked ~ .counter #labelState12 {
+  display: block;
+  right: 0;
+}
+#state11:checked ~ #state28:checked ~ .counter #labelState10 {
+  display: block;
+  left: 0;
+}
+#state11:checked ~ #state28:checked ~ .counter #labelState10:after {
+  content: "-";
+}
+#state12:checked ~ #state28:checked {
+  counter-increment: einser 82;
+}
+#state12:checked ~ #state28:checked ~ .counter #labelState13 {
+  display: block;
+  right: 0;
+}
+#state12:checked ~ #state28:checked ~ .counter #labelState11 {
+  display: block;
+  left: 0;
+}
+#state12:checked ~ #state28:checked ~ .counter #labelState11:after {
+  content: "-";
+}
+#state13:checked ~ #state28:checked {
+  counter-increment: einser 83;
+}
+#state13:checked ~ #state28:checked ~ .counter #labelState14 {
+  display: block;
+  right: 0;
+}
+#state13:checked ~ #state28:checked ~ .counter #labelState12 {
+  display: block;
+  left: 0;
+}
+#state13:checked ~ #state28:checked ~ .counter #labelState12:after {
+  content: "-";
+}
+#state14:checked ~ #state28:checked {
+  counter-increment: einser 84;
+}
+#state14:checked ~ #state28:checked ~ .counter #labelState15 {
+  display: block;
+  right: 0;
+}
+#state14:checked ~ #state28:checked ~ .counter #labelState13 {
+  display: block;
+  left: 0;
+}
+#state14:checked ~ #state28:checked ~ .counter #labelState13:after {
+  content: "-";
+}
+#state15:checked ~ #state28:checked {
+  counter-increment: einser 85;
+}
+#state15:checked ~ #state28:checked ~ .counter #labelState16 {
+  display: block;
+  right: 0;
+}
+#state15:checked ~ #state28:checked ~ .counter #labelState14 {
+  display: block;
+  left: 0;
+}
+#state15:checked ~ #state28:checked ~ .counter #labelState14:after {
+  content: "-";
+}
+#state16:checked ~ #state28:checked {
+  counter-increment: einser 86;
+}
+#state16:checked ~ #state28:checked ~ .counter #labelState17 {
+  display: block;
+  right: 0;
+}
+#state16:checked ~ #state28:checked ~ .counter #labelState15 {
+  display: block;
+  left: 0;
+}
+#state16:checked ~ #state28:checked ~ .counter #labelState15:after {
+  content: "-";
+}
+#state17:checked ~ #state28:checked {
+  counter-increment: einser 87;
+}
+#state17:checked ~ #state28:checked ~ .counter #labelState18 {
+  display: block;
+  right: 0;
+}
+#state17:checked ~ #state28:checked ~ .counter #labelState16 {
+  display: block;
+  left: 0;
+}
+#state17:checked ~ #state28:checked ~ .counter #labelState16:after {
+  content: "-";
+}
+#state18:checked ~ #state28:checked {
+  counter-increment: einser 88;
+}
+#state18:checked ~ #state28:checked ~ .counter #labelState19 {
+  display: block;
+  right: 0;
+}
+#state18:checked ~ #state28:checked ~ .counter #labelState17 {
+  display: block;
+  left: 0;
+}
+#state18:checked ~ #state28:checked ~ .counter #labelState17:after {
+  content: "-";
+}
+#state19:checked ~ #state28:checked {
+  counter-increment: einser 89;
+}
+#state19:checked ~ #state28:checked ~ .counter #labelState29 {
+  display: block;
+  right: 0;
+}
+#state19:checked ~ #state28:checked ~ .counter #labelState18 {
+  display: block;
+  left: 0;
+}
+#state19:checked ~ #state28:checked ~ .counter #labelState18:after {
+  content: "-";
+}
+#state110:checked ~ #state28:checked {
+  counter-increment: einser 90;
+}
+#state19:checked ~ #state28:checked ~ .counter #labelState29 {
+  display: block;
+  right: 0;
+}
+#state110:checked ~ #state28:checked ~ .counter #labelState19 {
+  display: block;
+  left: 0;
+}
+#state110:checked ~ #state28:checked ~ .counter #labelState19:after {
+  content: "-";
+}
+#state10:checked ~ #state20:checked ~ .counter #labelState10 {
+  display: block;
+  opacity: 0.2;
+}
+#state10:checked ~ #state20:checked ~ .counter #labelState10:after {
+  content: "-";
+}
+#state10:checked ~ #state29:checked ~ .counter #labelState29 {
+  display: block;
+  right: 0;
+  opacity: 0.2;
+}

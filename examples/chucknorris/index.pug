@@ -1,0 +1,38 @@
+- var brightnesses = 16
+
+html
+  head
+    link(rel="stylesheet", href="style.css")
+  body
+    div.container
+      div(class="isolate")
+
+        div.cont-r
+          each pixel in imageData
+            - var red = Math.floor(pixel.color.r / (255 / brightnesses))
+            - var id = pixel.x + '-' + pixel.y
+            div(class="pixel pixel-"+id)
+              - for (var brightness = 0; brightness < brightnesses; brightness++)
+                  input(type="radio" class="sat"+brightness name="r"+id checked=brightness==red)
+              div.color.red
+                .sat
+
+        div.cont-g
+          each pixel in imageData
+            - var green = Math.floor(pixel.color.g / (255 / brightnesses))
+            - var id = pixel.x + '-' + pixel.y
+            div(class="pixel pixel-"+id)
+              - for (var brightness = 0; brightness < brightnesses; brightness++)
+                  input(type="radio" class="sat"+brightness name="g"+id checked=brightness==green)
+              div.color.green
+                .sat
+
+        div.cont-b
+          each pixel in imageData
+            - var blue = Math.floor(pixel.color.b / (255 / brightnesses))
+            - var id = pixel.x + '-' + pixel.y
+            div(class="pixel pixel-"+id)
+              - for (var brightness = 0; brightness < brightnesses; brightness++)
+                  input(type="radio" class="sat"+brightness name="b"+id checked=brightness==blue)
+              div.color.blue
+                .sat

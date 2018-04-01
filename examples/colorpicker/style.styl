@@ -1,0 +1,157 @@
+brightnesses = 21 - 1
+dimensionWidth = 4
+dimensionHeight = 3
+
+*
+  box-sizing border-box
+body
+  min-height 100vh
+  background-color black
+  display flex
+  align-items center
+  justify-content center
+  font-family helvetica, arial, sans-serif
+
+input
+  display none
+
+label
+  display none
+  border-radius 50%
+  height 150px
+  width 150px
+  z-index 100
+  position absolute
+
+  &::after
+    content ""
+    display block
+    position absolute
+
+.color.red
+  border-color red
+  .label::after
+    color red
+    top -40px
+
+.color.green
+  border-color lime
+
+  .label::after
+    color lime
+    top -40px
+    right 0
+
+.color.blue
+  border-color blue
+  .label::after
+    color blue
+    bottom -50px
+    width 100%
+    text-align center
+
+
+.container
+  width 624px
+  height 468px
+  display flex
+  align-items center
+  justify-content center
+  flex-wrap wrap
+  transition: filter 0.2s;
+
+  &:hover .pixel
+    filter: blur(10px);
+
+    &:hover
+      filter: blur(0px);
+
+.pixel
+  position relative
+  width 156px
+  height 156px
+  border-radius 3px
+
+  &:hover
+    border none!important
+    z-index 100
+
+
+.isolate
+  isolation isolate
+
+.color
+  background-color black
+  border-radius 3px
+  width 150px
+  height 150px
+  position absolute
+  mix-blend-mode screen
+  top 0
+  left 0
+  transition all 0.3s
+  transform translate3d(0,0,0)
+
+.pixel .color::after
+  content ""
+  display block
+  height 100%
+  border-radius 3px
+  transition border-radius 0.3s
+
+.pixel:hover .color::after
+  content ""
+  display block
+  height 100%
+  border-radius 50%
+
+.pixel:hover .color
+  border-radius 50%
+  border-width 1px
+  border-style solid
+
+.pixel:hover .color:hover
+  border-width 3px
+  border-style solid
+
+.red:after
+  background-color red
+
+.pixel:hover .red
+  left -30px
+  top -11px
+
+.green::after
+  background-color lime
+
+.pixel:hover .green
+  left 30px
+  top -11px
+
+.blue:after
+  background-color blue
+
+.pixel:hover .blue
+  top 36px
+
+for height in (0 .. dimensionHeight)
+  for width in (0 .. dimensionWidth)
+    #red-{height}-{width}-0:checked ~ #green-{height}-{width}-0:checked ~ #blue-{height}-{width}-0:checked ~ .container .pixel
+      border 3px solid rgba(100, 100, 100, 0.2)
+      transition border 0.2s
+    for grey in (0 .. brightnesses)
+      greyvalue = (1 / brightnesses) * grey * 255
+      next = grey + 1 > brightnesses ? 0 : grey + 1
+
+      for color in "red" "green" "blue"
+        input[type=radio]#{color}-{grey}-{height}-{width}:checked ~ .container .pixel-{height}-{width}
+          .color.{color}::after
+            opacity: (1 / brightnesses) * grey
+
+          .color.{color} label:hover:after
+            content '' + round(greyvalue) + ' / 255'
+            padding 5px
+            z-index 100
+
+        input[type=radio]#{color}-{grey}-{height}-{width}:checked ~ .container .pixel-{height}-{width} .label.{color}-{next}
+          display block

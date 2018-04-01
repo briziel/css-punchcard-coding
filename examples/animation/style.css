@@ -1,0 +1,3089 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background-color: #000;
+  font-family: helvetica, arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+input {
+  display: none;
+}
+.color.red {
+  border-color: #f00;
+}
+.color.green {
+  border-color: #0f0;
+}
+.color.blue {
+  border-color: #00f;
+}
+.play {
+  background-color: #008000;
+  height: 20px;
+  width: 20px;
+  display: block;
+}
+#toggle:checked + .play {
+  background-color: reds;
+}
+.container {
+  width: 900px;
+  height: 600px;
+  position: absolute;
+  top: 20px;
+  opacity: 0;
+}
+#toggle:checked ~ .container.container-0 {
+  animation: anim-container-0 1.4s infinite;
+}
+@-moz-keyframes anim-container-0 {
+  0%, 7% {
+    opacity: 1;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes anim-container-0 {
+  0%, 7% {
+    opacity: 1;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@-o-keyframes anim-container-0 {
+  0%, 7% {
+    opacity: 1;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@keyframes anim-container-0 {
+  0%, 7% {
+    opacity: 1;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+#toggle:checked ~ .container.container-1 {
+  animation: anim-container-1 1.4s infinite;
+}
+@-moz-keyframes anim-container-1 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 1;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes anim-container-1 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 1;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@-o-keyframes anim-container-1 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 1;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@keyframes anim-container-1 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 1;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+#toggle:checked ~ .container.container-2 {
+  animation: anim-container-2 1.4s infinite;
+}
+@-moz-keyframes anim-container-2 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 1;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes anim-container-2 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 1;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@-o-keyframes anim-container-2 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 1;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@keyframes anim-container-2 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 1;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+#toggle:checked ~ .container.container-3 {
+  animation: anim-container-3 1.4s infinite;
+}
+@-moz-keyframes anim-container-3 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 1;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes anim-container-3 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 1;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@-o-keyframes anim-container-3 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 1;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@keyframes anim-container-3 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 1;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+#toggle:checked ~ .container.container-4 {
+  animation: anim-container-4 1.4s infinite;
+}
+@-moz-keyframes anim-container-4 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 1;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes anim-container-4 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 1;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@-o-keyframes anim-container-4 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 1;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@keyframes anim-container-4 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 1;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+#toggle:checked ~ .container.container-5 {
+  animation: anim-container-5 1.4s infinite;
+}
+@-moz-keyframes anim-container-5 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 1;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes anim-container-5 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 1;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@-o-keyframes anim-container-5 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 1;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@keyframes anim-container-5 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 1;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+#toggle:checked ~ .container.container-6 {
+  animation: anim-container-6 1.4s infinite;
+}
+@-moz-keyframes anim-container-6 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 1;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes anim-container-6 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 1;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@-o-keyframes anim-container-6 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 1;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@keyframes anim-container-6 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 1;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+#toggle:checked ~ .container.container-7 {
+  animation: anim-container-7 1.4s infinite;
+}
+@-moz-keyframes anim-container-7 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 1;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes anim-container-7 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 1;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@-o-keyframes anim-container-7 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 1;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@keyframes anim-container-7 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 1;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+#toggle:checked ~ .container.container-8 {
+  animation: anim-container-8 1.4s infinite;
+}
+@-moz-keyframes anim-container-8 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 1;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes anim-container-8 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 1;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@-o-keyframes anim-container-8 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 1;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@keyframes anim-container-8 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 1;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+#toggle:checked ~ .container.container-9 {
+  animation: anim-container-9 1.4s infinite;
+}
+@-moz-keyframes anim-container-9 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 1;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes anim-container-9 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 1;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@-o-keyframes anim-container-9 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 1;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@keyframes anim-container-9 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 1;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+#toggle:checked ~ .container.container-10 {
+  animation: anim-container-10 1.4s infinite;
+}
+@-moz-keyframes anim-container-10 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 1;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes anim-container-10 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 1;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@-o-keyframes anim-container-10 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 1;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@keyframes anim-container-10 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 1;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+#toggle:checked ~ .container.container-11 {
+  animation: anim-container-11 1.4s infinite;
+}
+@-moz-keyframes anim-container-11 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 1;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes anim-container-11 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 1;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@-o-keyframes anim-container-11 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 1;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@keyframes anim-container-11 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 1;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+#toggle:checked ~ .container.container-12 {
+  animation: anim-container-12 1.4s infinite;
+}
+@-moz-keyframes anim-container-12 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 1;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes anim-container-12 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 1;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@-o-keyframes anim-container-12 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 1;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@keyframes anim-container-12 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 1;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+#toggle:checked ~ .container.container-13 {
+  animation: anim-container-13 1.4s infinite;
+}
+@-moz-keyframes anim-container-13 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 1;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes anim-container-13 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 1;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@-o-keyframes anim-container-13 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 1;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+@keyframes anim-container-13 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 1;
+  }
+  100%, 107% {
+    opacity: 0;
+  }
+}
+#toggle:checked ~ .container.container-14 {
+  animation: anim-container-14 1.4s infinite;
+}
+@-moz-keyframes anim-container-14 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes anim-container-14 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 1;
+  }
+}
+@-o-keyframes anim-container-14 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 1;
+  }
+}
+@keyframes anim-container-14 {
+  0%, 7% {
+    opacity: 0;
+  }
+  7%, 14% {
+    opacity: 0;
+  }
+  14%, 21% {
+    opacity: 0;
+  }
+  21%, 29% {
+    opacity: 0;
+  }
+  29%, 36% {
+    opacity: 0;
+  }
+  36%, 43% {
+    opacity: 0;
+  }
+  43%, 50% {
+    opacity: 0;
+  }
+  50%, 57% {
+    opacity: 0;
+  }
+  57%, 64% {
+    opacity: 0;
+  }
+  64%, 71% {
+    opacity: 0;
+  }
+  71%, 79% {
+    opacity: 0;
+  }
+  79%, 86% {
+    opacity: 0;
+  }
+  86%, 93% {
+    opacity: 0;
+  }
+  93%, 100% {
+    opacity: 0;
+  }
+  100%, 107% {
+    opacity: 1;
+  }
+}
+.cont-r,
+.cont-g,
+.cont-b {
+  position: absolute;
+  top: 0;
+  width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  mix-blend-mode: screen;
+}
+.isolate {
+  isolation: isolate;
+}
+.pixel {
+  position: relative;
+  flex-basis: 3.3%;
+}
+.pixel::after {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.color {
+  background-color: #000;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+.color .sat {
+  padding-top: 100%;
+}
+.red .sat {
+  background-color: #f00;
+}
+.green .sat {
+  background-color: #0f0;
+}
+.blue .sat {
+  background-color: #00f;
+}
+input[type=radio].sat0:checked ~ .color.red .sat {
+  opacity: 0;
+}
+input[type=radio].sat0:checked ~ .color.green .sat {
+  opacity: 0;
+}
+input[type=radio].sat0:checked ~ .color.blue .sat {
+  opacity: 0;
+}
+input[type=radio].sat1:checked ~ .color.red .sat {
+  opacity: 0.066666666666667;
+}
+input[type=radio].sat1:checked ~ .color.green .sat {
+  opacity: 0.066666666666667;
+}
+input[type=radio].sat1:checked ~ .color.blue .sat {
+  opacity: 0.066666666666667;
+}
+input[type=radio].sat2:checked ~ .color.red .sat {
+  opacity: 0.133333333333333;
+}
+input[type=radio].sat2:checked ~ .color.green .sat {
+  opacity: 0.133333333333333;
+}
+input[type=radio].sat2:checked ~ .color.blue .sat {
+  opacity: 0.133333333333333;
+}
+input[type=radio].sat3:checked ~ .color.red .sat {
+  opacity: 0.2;
+}
+input[type=radio].sat3:checked ~ .color.green .sat {
+  opacity: 0.2;
+}
+input[type=radio].sat3:checked ~ .color.blue .sat {
+  opacity: 0.2;
+}
+input[type=radio].sat4:checked ~ .color.red .sat {
+  opacity: 0.266666666666667;
+}
+input[type=radio].sat4:checked ~ .color.green .sat {
+  opacity: 0.266666666666667;
+}
+input[type=radio].sat4:checked ~ .color.blue .sat {
+  opacity: 0.266666666666667;
+}
+input[type=radio].sat5:checked ~ .color.red .sat {
+  opacity: 0.333333333333333;
+}
+input[type=radio].sat5:checked ~ .color.green .sat {
+  opacity: 0.333333333333333;
+}
+input[type=radio].sat5:checked ~ .color.blue .sat {
+  opacity: 0.333333333333333;
+}
+input[type=radio].sat6:checked ~ .color.red .sat {
+  opacity: 0.4;
+}
+input[type=radio].sat6:checked ~ .color.green .sat {
+  opacity: 0.4;
+}
+input[type=radio].sat6:checked ~ .color.blue .sat {
+  opacity: 0.4;
+}
+input[type=radio].sat7:checked ~ .color.red .sat {
+  opacity: 0.466666666666667;
+}
+input[type=radio].sat7:checked ~ .color.green .sat {
+  opacity: 0.466666666666667;
+}
+input[type=radio].sat7:checked ~ .color.blue .sat {
+  opacity: 0.466666666666667;
+}
+input[type=radio].sat8:checked ~ .color.red .sat {
+  opacity: 0.533333333333333;
+}
+input[type=radio].sat8:checked ~ .color.green .sat {
+  opacity: 0.533333333333333;
+}
+input[type=radio].sat8:checked ~ .color.blue .sat {
+  opacity: 0.533333333333333;
+}
+input[type=radio].sat9:checked ~ .color.red .sat {
+  opacity: 0.6;
+}
+input[type=radio].sat9:checked ~ .color.green .sat {
+  opacity: 0.6;
+}
+input[type=radio].sat9:checked ~ .color.blue .sat {
+  opacity: 0.6;
+}
+input[type=radio].sat10:checked ~ .color.red .sat {
+  opacity: 0.666666666666667;
+}
+input[type=radio].sat10:checked ~ .color.green .sat {
+  opacity: 0.666666666666667;
+}
+input[type=radio].sat10:checked ~ .color.blue .sat {
+  opacity: 0.666666666666667;
+}
+input[type=radio].sat11:checked ~ .color.red .sat {
+  opacity: 0.733333333333333;
+}
+input[type=radio].sat11:checked ~ .color.green .sat {
+  opacity: 0.733333333333333;
+}
+input[type=radio].sat11:checked ~ .color.blue .sat {
+  opacity: 0.733333333333333;
+}
+input[type=radio].sat12:checked ~ .color.red .sat {
+  opacity: 0.8;
+}
+input[type=radio].sat12:checked ~ .color.green .sat {
+  opacity: 0.8;
+}
+input[type=radio].sat12:checked ~ .color.blue .sat {
+  opacity: 0.8;
+}
+input[type=radio].sat13:checked ~ .color.red .sat {
+  opacity: 0.866666666666667;
+}
+input[type=radio].sat13:checked ~ .color.green .sat {
+  opacity: 0.866666666666667;
+}
+input[type=radio].sat13:checked ~ .color.blue .sat {
+  opacity: 0.866666666666667;
+}
+input[type=radio].sat14:checked ~ .color.red .sat {
+  opacity: 0.933333333333333;
+}
+input[type=radio].sat14:checked ~ .color.green .sat {
+  opacity: 0.933333333333333;
+}
+input[type=radio].sat14:checked ~ .color.blue .sat {
+  opacity: 0.933333333333333;
+}
+input[type=radio].sat15:checked ~ .color.red .sat {
+  opacity: 1;
+}
+input[type=radio].sat15:checked ~ .color.green .sat {
+  opacity: 1;
+}
+input[type=radio].sat15:checked ~ .color.blue .sat {
+  opacity: 1;
+}

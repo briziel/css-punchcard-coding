@@ -1,0 +1,104 @@
+brightnesses = 16 - 1
+frames = 14
+dimensionWidth = 30
+dimensionHeight = 30
+
+*
+  box-sizing border-box
+body
+  min-height 100vh
+  background-color black
+  font-family helvetica, arial, sans-serif
+  padding 0
+  margin 0
+
+input
+  display none
+
+.color.red
+  border-color red
+
+.color.green
+  border-color lime
+
+.color.blue
+  border-color blue
+
+.play
+  background-color green
+  height 20px
+  width 20px
+  display block
+
+#toggle:checked + .play
+  background-color reds
+
+.container
+  width 900px
+  height 600px
+  position absolute
+  top 20px
+  opacity 0
+
+for frame in 0 .. frames
+  #toggle:checked ~ .container.container-{frame}
+    animationName = anim-container-
+    animation animationName+frame 1.4s infinite
+
+  @keyframes anim-container-{frame}
+    for i in 0..frames
+      if i == frame
+        {round(( 100% / frames ) * i)}, {round(( 100% / frames ) * (i + 1))}
+          opacity 1
+      else
+        {round(( 100% / frames ) * i)}, {round(( 100% / frames ) * (i + 1))}
+          opacity 0
+
+.cont-r
+.cont-g
+.cont-b
+  position absolute
+  top 0
+  width 900px
+  display flex
+  flex-wrap wrap
+  mix-blend-mode screen
+
+.isolate
+  isolation isolate
+
+.pixel
+  position relative
+  flex-basis 3.3%
+
+  &::after
+    content ""
+    display block
+    padding-top 100%
+
+.color
+  background-color black
+  position absolute
+  width 100%
+  top 0
+  left 0
+  transition all 0.3s
+
+  .sat
+    padding-top 100%
+
+.red .sat
+  background-color red
+
+.green .sat
+  background-color lime
+
+.blue .sat
+  background-color blue
+
+for grey in (0 .. brightnesses)
+  greyvalue = (1 / brightnesses) * grey * 255
+
+  for color in "red" "green" "blue"
+    input[type=radio].sat{grey}:checked ~ .color.{color} .sat
+        opacity: (1 / brightnesses) * grey

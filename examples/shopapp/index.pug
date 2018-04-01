@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Document
+  body
+    style
+      include ./style.css
+    form.wrapper(action="https://www.neuland-bfi.de/fab/formsubmit")
+      input(type="checkbox" id="detail1")
+      - for (var dezimalstelle = 1; dezimalstelle <= 2; dezimalstelle++)
+        - for (var zahl = 0; zahl < 10; zahl++)
+          input(type="radio" name="ds1"+dezimalstelle id="s1"+dezimalstelle+zahl checked=(zahl==1 && dezimalstelle==1) || (zahl==0 && dezimalstelle==2) )
+      input(type="checkbox" id="detail1basket")
+
+      input(type="checkbox" id="detail2")
+      - for (var dezimalstelle = 1; dezimalstelle <= 2; dezimalstelle++)
+        - for (var zahl = 0; zahl < 10; zahl++)
+          input(type="radio" name="ds2"+dezimalstelle id="s2"+dezimalstelle+zahl checked=(zahl==1 && dezimalstelle==1) || (zahl==0 && dezimalstelle==2) )
+      input(type="checkbox" id="detail2basket")
+
+      input(type="checkbox" id="cart")
+
+
+      table.header
+        tr
+          td.logo
+            h1 Shop.
+          td.icons
+            label.minicart.button(for="cart") Warenkorb&nbsp;
+              span.amount
+              span.price
+
+      table.list
+        tr
+          td.list__tile.list__tile--new.list__element
+            label(for="detail1")
+              img.image(src='https://media.manufactum.de/is/image/Manufactum/600s_shop/97774_01.jpg')
+              .series malm
+              .title Tablett-Tisch
+              .price 179,00 €
+          td.list__tile.list__element
+            label(for="detail2")
+              img.image(src='https://media.manufactum.de/is/image/Manufactum/600s_shop/10010_01.jpg')
+              .series invicta
+              .title Gusseisener Bräter
+              .price 55,00 €
+          td.list__tile.list__element
+            img.image(src='https://media.manufactum.de/is/image/Manufactum/600s_shop/69266_01.jpg')
+            .series malm
+            .title Servierwagen
+            .price 109,99 €
+        tr
+          td.list__tile.list__element
+            img.image(src='https://media.manufactum.de/is/image/Manufactum/600s_shop/20340_01.jpg')
+            .series røllmøps
+            .title Container 360° klein
+            .price 109,99 €
+          td.list__tile.list__element
+            img.image(src='https://media.manufactum.de/is/image/Manufactum/600s_shop/89409_01.jpg')
+            .series kørb
+            .title Korbtablett
+            .price 9,99 €
+          td.list__tile.list__tile--new.list__element
+            img.image(src='https://media.manufactum.de/is/image/Manufactum/600s_shop/97736_01.jpg')
+            .series Laddar
+            .title Regalsystem
+            .price 234,99 €
+      table.detail
+        tr.detail1.detailcontent
+          td.detail__backtolist
+            label.back(for="detail1") zurück zur Überischt
+        tr.detail1.detailcontent
+          td.detail__image
+            input(id="imagedetail11" type="radio" name="image1" checked)
+            input(id="imagedetail12" type="radio" name="image1")
+            input(id="imagedetail13" type="radio" name="image1")
+            table
+              tr
+                td(colspan="4")
+                  img.image.mainimage.image11(src='https://media.manufactum.de/is/image/Manufactum/974s_shop/97774_01.jpg')
+                  img.image.mainimage.image12(src='https://media.manufactum.de/is/image/Manufactum/974s_shop/97774_02.jpg')
+                  img.image.mainimage.image13(src='https://media.manufactum.de/is/image/Manufactum/974s_shop/97774_04.jpg')
+              tr
+                td.thumb
+                  label(id="labeldetailimage11" for="imagedetail11")
+                    img.image.image11(src='https://media.manufactum.de/is/image/Manufactum/974s_shop/97774_01.jpg')
+                td.thumb
+                  label(id="labeldetailimage12" for="imagedetail12")
+                    img.image.image11(src='https://media.manufactum.de/is/image/Manufactum/974s_shop/97774_02.jpg')
+                td.thumb
+                  label(id="labeldetailimage13" for="imagedetail13")
+                    img.image.image11(src='https://media.manufactum.de/is/image/Manufactum/974s_shop/97774_04.jpg')
+                td.thumb
+          td.detail__orderform
+            .series malm
+            .title Tablett-Tisch
+            .detail__amount
+              div.counter
+                span.amount1
+                div.handles
+                  - for (var dezimalstelle = 1; dezimalstelle <= 2; dezimalstelle++)
+                    - for (var zahl = 0; zahl < 10; zahl++)
+                      label(class="aH" id="lS1"+dezimalstelle+zahl for="s1"+dezimalstelle+zahl)
+            .price.detail__price 179,00 €
+            label.button.button--primary.detail__addtocart(for="detail1basket") Warenkorb
+        tr.detail1.detailcontent
+          td
+            h1 Toller Tisch
+            p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex expedita, odio labore atque officia aperiam? Eos esse dolore cum praesentium doloribus. Vitae similique ab inventore voluptates, autem culpa distinctio iusto!
+            p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae similique ab inventore voluptates, autem culpa distinctio iusto! p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex expedita, odio labore atque officia aperiam? Eos esse dolore cum praesentium doloribus. Vitae similique ab inventore voluptates, autem culpa distinctio iusto!
+
+
+
+        tr.detail2.detailcontent
+          td.detail__backtolist
+            label.back(for="detail2") zurück zur Überischt
+        tr.detail2.detailcontent
+          td.detail__image
+            input(id="imagedetail21" type="radio" name="image2" checked)
+            table
+              tr
+                td(colspan="4")
+                  img.image.mainimage.image21(src='https://media.manufactum.de/is/image/Manufactum/600s_shop/10010_01.jpg')
+              tr
+                td.thumb
+                  label(id="labeldetailimage21" for="imagedetail21")
+                    img.image.image21(src='https://media.manufactum.de/is/image/Manufactum/974s_shop/10010_01.jpg')
+                td.thumb
+                td.thumb
+                td.thumb
+          td.detail__orderform
+            .series invicta
+            .title Gusseisener Bräter
+            .detail__amount
+              div.counter
+                span.amount2
+                div.handles
+                  - for (var dezimalstelle = 1; dezimalstelle <= 2; dezimalstelle++)
+                    - for (var zahl = 0; zahl < 10; zahl++)
+                      label(class="aH" id="lS2"+dezimalstelle+zahl for="s2"+dezimalstelle+zahl)
+            .price.detail__price 55,00 €
+            label.button.button--primary.detail__addtocart(for="detail2basket") Warenkorb
+        tr.detail2.detailcontent
+          td
+            h1 Toller Bräter
+            p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex expedita, odio labore atque officia aperiam? Eos esse dolore cum praesentium doloribus. Vitae similique ab inventore voluptates, autem culpa distinctio iusto!
+            p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae similique ab inventore voluptates, autem culpa distinctio iusto! p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex expedita, odio labore atque officia aperiam? Eos esse dolore cum praesentium doloribus. Vitae similique ab inventore voluptates, autem culpa distinctio iusto!
+
+      table.cart
+        tr
+          td.detail__backtolist
+            label.back(for="cart") zurück
+        tr
+          th entfernen
+          th
+          th Hersteller
+          th Produktname
+          th Anzahl
+          th Preis
+        tr.lineitem.lineitemNone
+          td(colspan=5) Leider haben sie noch keine Produkte im Warenkorb.
+          td
+            label.button(for="cart") Zurück
+
+        tr.lineitem.lineitem1
+          td
+            label.button.lineitem__delete(for="detail1basket") X
+          td.lineitem__image
+            img.image(src='https://media.manufactum.de/is/image/Manufactum/600s_shop/97774_01.jpg')
+          td
+            .series malm
+          td
+            .title Tablett-Tisch
+          td.lineitem__amount
+            div.counter
+              span.amount1
+              div.handles
+                - for (var dezimalstelle = 1; dezimalstelle <= 2; dezimalstelle++)
+                  - for (var zahl = 0; zahl < 10; zahl++)
+                    label(class="aH" id="lS1"+dezimalstelle+zahl for="s1"+dezimalstelle+zahl)
+          td.lineitem__price
+            .price 179,00 €
+        tr.lineitem.lineitem2
+          td
+            label.button.lineitem__delete(for="detail2basket") X
+          td.lineitem__image
+            img.image(src='https://media.manufactum.de/is/image/Manufactum/600s_shop/10010_01.jpg')
+          td
+            .series invicta
+          td
+            .title Gusseisener Bräter
+          td.lineitem__amount
+            div.counter
+              span.amount2
+              div.handles
+                - for (var dezimalstelle = 1; dezimalstelle <= 2; dezimalstelle++)
+                  - for (var zahl = 0; zahl < 10; zahl++)
+                    label(class="aH" id="lS2"+dezimalstelle+zahl for="s2"+dezimalstelle+zahl)
+          td.lineitem__price
+            .price 55,00 €
+        tr.cart__total
+          td(colspan=5).total__label
+            div Kosten
+            div Versandkosten
+            div.fat Gesamt
+          td
+            .cart__price
+            .cart__shippingCharges
+            .cart__priceTotal.fat
+        tr.cart__order
+          td.ordersubmitwrapper(colspan=6)
+            input.button.button--primary.ordersubmit(type="submit" value="Jetzt Bestellen")
+
+
+
+    .wrapper.wrapper--dark
+      table.footer
+        tr
+          td footer

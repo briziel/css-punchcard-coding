@@ -1,0 +1,31 @@
+- var brightnesses = 21
+- var dimensionWidth = 4
+- var dimensionHeight = 3
+html
+  head
+    link(rel="stylesheet", href="style.css")
+  body
+    - for (var height = 0; height < dimensionHeight; height++)
+      - for (var width = 0; width < dimensionWidth; width++)
+        - var id = height + '-' + width
+
+        - for (var brightness = 0; brightness < brightnesses; brightness++)
+          input(type="radio" id="red-"+brightness+"-"+id name="red"+id checked=brightness==0)
+          input(type="radio" id="green-"+brightness+"-"+id name="green"+id checked=brightness==0)
+          input(type="radio" id="blue-"+brightness+"-"+id name="blue"+id checked=brightness==0)
+    //br
+    div.container
+      - for (var height = 0; height < dimensionHeight; height++)
+        - for (var width = 0; width < dimensionWidth; width++)
+          - var id = height + '-' + width
+          div(class="pixel pixel-"+id)
+            div(class="isolate")
+              div.color.red
+                - for (var brightness = 0; brightness < brightnesses; brightness++)
+                  label(for="red-"+brightness+"-"+id class="label red-" + brightness)
+              div.color.green
+                - for (var brightness = 0; brightness < brightnesses; brightness++)
+                  label(for="green-"+brightness+"-"+id class="label green-" + brightness)
+              div.color.blue
+                - for (var brightness = 0; brightness < brightnesses; brightness++)
+                  label(for="blue-"+brightness+"-"+id class="label blue-" + brightness)

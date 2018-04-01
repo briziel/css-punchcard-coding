@@ -1,0 +1,16 @@
+html
+  head
+    meta(charset="utf-8")
+    link(rel="stylesheet", href="style.css")
+  body
+    - for (var dezimalstelle = 1; dezimalstelle <= 2; dezimalstelle++)
+      - for (var zahl = 0; zahl < 10; zahl++)
+        input(type="radio" name="dezimalstelle"+dezimalstelle id="state"+dezimalstelle+zahl checked=zahl==0)
+
+    div.counter
+      span.number
+      div.handles
+        - for (var dezimalstelle = 1; dezimalstelle <= 2; dezimalstelle++)
+          - for (var zahl = 0; zahl < 10; zahl++)
+            label(id="labelState"+dezimalstelle+zahl for="state"+dezimalstelle+zahl)
+
